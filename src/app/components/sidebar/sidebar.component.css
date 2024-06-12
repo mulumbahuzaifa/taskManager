@@ -1,0 +1,20 @@
+.active{
+    background-color: #f8f9fa;
+    color: #007bff;
+    border-left: 3px solid #007bff;
+    border-radius: 0 50px 50px 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
