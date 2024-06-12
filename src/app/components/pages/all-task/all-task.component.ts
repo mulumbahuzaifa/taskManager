@@ -38,7 +38,7 @@ export class AllTaskComponent {
   }
 
   onImportant(task:any){
-    task.completed=true
+    task.important=true
     this.httpService.updateTask(task).subscribe(()=>{
     })
   }

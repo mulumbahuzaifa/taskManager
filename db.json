@@ -1,26 +1,32 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Task 1",
       "description": "Description 1",
-      "status": "pending"
+      "status": "pending",
+      "completed": true
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Task 2",
       "description": "Description 2",
-      "status": "pending"
+      "status": "pending",
+      "completed": true,
+      "important": true
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Task 3",
       "description": "Description 3",
-      "status": "pending"
+      "status": "pending",
+      "completed": true,
+      "important": true
     },
     {
       "id": "a6bf",
-      "title": "Error handling"
+      "title": "Error handling",
+      "completed": true
     },
     {
       "id": "2e14",

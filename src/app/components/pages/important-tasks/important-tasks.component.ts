@@ -1,16 +1,16 @@
 import { Component, inject } from '@angular/core';
-import { PageTitleComponent } from '../../page-title/page-title.component';
-import { TaskListComponent } from '../../task-list/task-list.component';
 import { HttpService } from '../../../services/http.service';
+import { TaskListComponent } from '../../task-list/task-list.component';
+import { PageTitleComponent } from '../../page-title/page-title.component';
 
 @Component({
-  selector: 'app-completed-task',
+  selector: 'app-important-tasks',
   standalone: true,
   imports: [PageTitleComponent,TaskListComponent],
-  templateUrl: './completed-task.component.html',
-  styleUrl: './completed-task.component.css'
+  templateUrl: './important-tasks.component.html',
+  styleUrl: './important-tasks.component.css'
 })
-export class CompletedTaskComponent {
+export class ImportantTasksComponent {
   newTask="";
   taskList:any[]=[];
   httpService=inject(HttpService);
@@ -21,7 +21,7 @@ export class CompletedTaskComponent {
 
   getAllTasks(){
     this.httpService.getAllTasks().subscribe((result:any)=>{
-      this.taskList=result.filter((x:any)=>x.completed==true);
+      this.taskList=result.filter((x:any)=>x.important==true);
     })
   }
   onComplete(task:any){
