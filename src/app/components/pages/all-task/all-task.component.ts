@@ -42,4 +42,7 @@ export class AllTaskComponent {
     this.httpService.updateTask(task).subscribe(()=>{
     })
   }
+  search(searchTerm:any){
+    console.log(searchTerm)
+  }
 }

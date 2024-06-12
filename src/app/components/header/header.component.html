@@ -6,6 +6,12 @@
       <!-- Logo -->
       <div class="pt-2 font-bold text-xl">Task Manager</div>
       <!-- Menu Items -->
+      <input
+        type="text"
+        class="h-10 w-96 rounded p-4"
+        placeholder="Search your tasks..."
+        [formControl]="searchControl"
+      >
       <!-- <div class="hidden space-x-6 md:flex">
         <a
           href="#"

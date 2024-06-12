@@ -1,7 +1,7 @@
 
-<app-page-title></app-page-title>
+<app-page-title (search)="search($event)"></app-page-title>
 <div class="flex mt-6">
-  <input type="text" class="w-full h-11 px-4 py-2 rounded shadow" placeholder="Search Task"
+  <input type="text" class="w-full h-11 px-4 py-2 rounded shadow" placeholder="Add Task"
   [(ngModel)]="newTask"
   (keyup.enter)="addTask()"
   />
